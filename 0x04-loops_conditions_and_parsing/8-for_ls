@@ -4,5 +4,5 @@
 list=$(ls)
 for elem in $list
 do
-	echo $elem | cut -d '-' -f2
+	echo "$elem" | cut -d '-' -f2
 done
