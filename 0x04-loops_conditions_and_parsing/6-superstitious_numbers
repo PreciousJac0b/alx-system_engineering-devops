@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Displays texts using the bash case statement
+
+i=1
+
+while (( i <= 20 ))
+do
+	echo $i
+
+	case $i in 
+	4) echo "bad luck from China"
+	;;
+	6) echo "bad luck from Japan"
+	;;
+	17) echo "bad luck from Italy"
+	;;
+esac
+	(( i++))
+done
