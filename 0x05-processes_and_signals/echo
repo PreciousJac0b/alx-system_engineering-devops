@@ -1,6 +1,0 @@
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0   8948   400 ?        Ssl  11:02   0:00 /init
-root       522  0.0  0.0   9304   236 tty1     Ss   11:28   0:00 /init
-peejayh+   523  0.0  0.0  17444  4184 tty1     S    11:28   0:00 -bash
-peejayh+   559  0.0  0.0  15800  1728 tty1     S    11:35   0:00 bash ./1-list_your_processes
-peejayh+   560  0.0  0.0  18500  1940 tty1     R    11:35   0:00 ps aux
