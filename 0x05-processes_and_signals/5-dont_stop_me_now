@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kills process ID of another program
+
+kill "$(ps -aux | pgrep -f 4-to_infinity_and_beyond)"
