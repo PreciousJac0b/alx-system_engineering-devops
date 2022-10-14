@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prints a text infinitely till the user hits ctrl+C
+
+while true
+do 
+	echo "To infinity and beyond"
+	sleep 2
+done	
