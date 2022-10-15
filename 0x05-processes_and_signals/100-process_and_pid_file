@@ -14,5 +14,5 @@ echo $$ > /var/run/myscript.pid
 while true
 do
 	echo "To infinity and beyond"
-	sleep 5
+	sleep 2
 done
