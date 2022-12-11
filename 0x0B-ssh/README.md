@@ -1,0 +1,3 @@
+# SSH CONFIGURATION
+
+* Servers
