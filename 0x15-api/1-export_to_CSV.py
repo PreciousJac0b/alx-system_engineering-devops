@@ -21,7 +21,7 @@ def fetch_data(emp_id):
 
     for elem in user_response:
         if elem["id"] == emp_id:
-            employee_name = elem["name"]
+            employee_name = elem["username"]
 
     api_url = "https://jsonplaceholder.typicode.com/todos"
     response = requests.get(api_url)
