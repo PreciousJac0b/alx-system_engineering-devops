@@ -34,7 +34,7 @@ def fetch_data(emp_id):
         if elem["id"] == emp_id:
             emp_name = elem["name"]
 
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
             emp_name, total_num_of_done_tasks, total_num_of_tasks))
     print("{}".format(task_title), end="")
 
