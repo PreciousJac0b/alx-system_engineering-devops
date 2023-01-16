@@ -30,13 +30,13 @@ def fetch_data(emp_id):
     total_num_of_done_tasks = 0
     task_title = ""
     with open("{}.csv".format(emp_id), "w+", newline="") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         for elem in response:
             if elem["userId"] == emp_id:
-                tmp_string = [str(elem["userId"]),
+                tmp_string = [str(elem.get("userId")),
                               str(employee_name),
-                              str(elem["completed"]),
-                              str(elem["title"])]
+                              str(elem.get("completed")),
+                              str(elem.get("title"))]
                 writer.writerow(tmp_string)
                 tmp_string = []
 
