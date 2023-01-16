@@ -23,7 +23,7 @@ def fetch_data(emp_id):
             total_num_of_tasks += 1
             if elem["completed"]:
                 total_num_of_done_tasks += 1
-                task_title += "     {}\n".format(elem["title"])
+                task_title += '\t {}\n'.format(elem["title"])
 
     user_url = "https://jsonplaceholder.typicode.com/users"
     user_response = requests.get(user_url)
