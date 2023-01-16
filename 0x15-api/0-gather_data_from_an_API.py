@@ -28,14 +28,14 @@ def fetch_data(emp_id):
     user_url = "https://jsonplaceholder.typicode.com/users"
     user_response = requests.get(user_url)
     user_response = user_response.json()
-    emp_name = ""
+    employee_name = ""
 
     for elem in user_response:
         if elem["id"] == emp_id:
-            emp_name = elem["name"]
+            employee_name = elem["name"]
 
     print("Employee {} is done with tasks({}/{}):".format(
-            emp_name, total_num_of_done_tasks, total_num_of_tasks))
+            employee_name, total_num_of_done_tasks, total_num_of_tasks))
     print("{}".format(task_title), end="")
 
 
