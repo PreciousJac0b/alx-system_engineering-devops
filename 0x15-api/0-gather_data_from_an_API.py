@@ -5,8 +5,9 @@
     the number of todos of a particular employee
 """
 
-import requests
 import json
+import requests
+import sys
 
 
 def fetch_data(emp_id):
@@ -22,7 +23,7 @@ def fetch_data(emp_id):
             total_num_of_tasks += 1
             if elem["completed"]:
                 total_num_of_done_tasks += 1
-                task_title += "\t {}\n".format(elem["title"])
+                task_title += "     {}\n".format(elem["title"])
 
     user_url = "https://jsonplaceholder.typicode.com/users"
     user_response = requests.get(user_url)
@@ -39,6 +40,5 @@ def fetch_data(emp_id):
 
 
 if __name__ == '__main__':
-    import sys
     emp_id = int(sys.argv[1])
     fetch_data(emp_id)
